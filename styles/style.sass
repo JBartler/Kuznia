@@ -1,0 +1,175 @@
+@media screen and (min-width: 768px)
+    .background_img .img_container
+        flex: 0 0 calc(33.33% - 32px)
+    .background_blur .blur_img
+        flex: 0 0 calc(33.33% - 32px)
+
+*
+    padding: 0
+    border: 0
+    box-sizing: border-box
+
+.container
+    background: #202020
+    display: flex
+    justify-content: center
+    flex-direction: column
+    margin: 5vh auto
+    height: 90vh
+    // width: 90vw jak cośto poprawić
+    // max-width: 100vw tutaj okreslic maxy w px, ogolnie dokladna wartosc
+    // max-height: 98vh
+
+header
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    text-align: center
+    font-size: 80px
+
+section
+    display: flex
+    margin: auto
+    width: 100%
+    // height: 80%
+    position: relative
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(48,48,48,1) 50%, rgba(50,50,50,1) 100%)
+
+.background_img
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin: auto
+    z-index: 2
+    // overflow: hidden
+    width: 90%
+    height: 90%
+
+.img_container
+    clip-path: polygon(5% 0, 110% 0%, 100% 100%, -5% 100%)
+    position: relative
+    right: 15px
+    width: 100%
+    height: 100%
+    // position: absolute
+    // z-index: 2
+    // display: flex
+    // justify-content: center
+    // overflow: hidden
+    // border: 60px solid rgba(0,0 ,0 ,0 )
+
+    .photo
+        width: 100%
+        height: 99%
+        left: 10px
+        position: relative
+        transform: scale(1.2)
+        filter: grayscale(100%)
+
+.background_blur
+    position: absolute
+    z-index: 1
+    display: flex
+    justify-content: center
+    width: 100%
+    height: 100%
+    overflow: hidden
+    border: 60px solid rgba(0,0 ,0 ,0 )
+
+.blur_img
+    // width: 100%
+    // position: relative
+    // overflow: hidden
+    transform: scale(4)
+    filter: blur(2px)
+
+.description
+    z-index: 5
+    position: absolute
+
+footer
+    align-items: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    text-align: center
+    margin-bottom: 1rem
+    font-size: 80px
+
+.cos
+    width: 100%
+    height: 100%
+    background-color: grey
+    top: 0
+    left: 0
+    position: absolute
+    z-index: 3
+    opacity: 0.4
+    transform: scale(1.5)
+
+.cos2
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    position: absolute
+    z-index: 3
+    transform: scale(1.5)
+
+.cos3
+    width: 100%
+    height: 100%
+    background-color: grey
+    top: 0
+    left: 0
+    position: absolute
+    z-index: 3
+    opacity: 0.4
+    transform: scale(1.5)
+
+.color
+    // width: 29%
+    // height: 100%
+    // top: 0
+    // position: absolute
+    // z-index: 99
+    // transform: scale(1.1)
+    // background: rgb(0,0,0)
+    // background: linear-gradient(75deg, rgba(0,0,0,1) 0%, rgba(61,61,61,0) 60%, rgba(0,0,0,1) 100%)
+    // transform: skew(-5deg)
+
+.color_first
+    width: 29%
+    height: 100%
+    top: 0
+    left: 4%
+    position: absolute
+    z-index: 99
+    transform: scale(1.1)
+    background: rgb(0,0,0)
+    background: linear-gradient(75deg, rgba(0,0,0,1) 0%, rgba(61,61,61,0) 60%, rgba(0,0,0,1) 100%)
+    transform: skew(-5deg)
+
+.color_secound
+    width: 29%
+    height: 100%
+    top: 0
+    left: 34.5%
+    position: absolute
+    z-index: 99
+    transform: scale(1.1)
+    background: rgb(0,0,0)
+    background: rgba(0,0 ,255 ,0.3 )
+    transform: skew(-5deg)
+
+.color_third
+    width: 29%
+    height: 100%
+    top: 0
+    left: 65%
+    position: absolute
+    z-index: 99
+    transform: scale(1.1)
+    background: rgb(0,0,0)
+    background: linear-gradient(75deg, rgba(0,0,0,1) 0%, rgba(61,61,61,0) 60%, rgba(0,0,0,1) 100%)
+    transform: skew(-5deg)
