@@ -30,8 +30,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 5vh auto;
-  height: 90vh;
+  margin: auto;
+  height: 96vh;
+  max-width: 3600px;
 }
 
 header {
@@ -79,20 +80,32 @@ section {
   -webkit-clip-path: polygon(5% 0, 110% 0%, 100% 100%, -5% 100%);
           clip-path: polygon(5% 0, 110% 0%, 100% 100%, -5% 100%);
   position: relative;
+  top: -13px;
   right: 15px;
   width: 100%;
-  height: 100%;
+  height: 102%;
 }
 
 .img_container .photo {
   width: 100%;
-  height: 99%;
+  height: 100%;
   left: 10px;
+  z-index: 10;
   position: relative;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+}
+
+.secoundPhoto {
+  position: absolute;
+  top: 100px;
+}
+
+.thirdPhoto {
+  position: absolute;
+  top: 100px;
 }
 
 .background_blur {
@@ -148,7 +161,7 @@ footer {
   top: 0;
   left: 0;
   position: absolute;
-  z-index: 3;
+  z-index: 15;
   opacity: 0.4;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
@@ -160,7 +173,7 @@ footer {
   top: 0;
   left: 0;
   position: absolute;
-  z-index: 3;
+  z-index: 15;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
@@ -172,7 +185,7 @@ footer {
   top: 0;
   left: 0;
   position: absolute;
-  z-index: 3;
+  z-index: 15;
   opacity: 0.4;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
@@ -184,13 +197,13 @@ footer {
   display: flex;
 }
 
-.color_first {
+.colorFirst {
   width: 29%;
   height: 100%;
   top: 0;
   left: 4%;
   position: absolute;
-  z-index: 99;
+  z-index: 999;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   background: black;
@@ -199,13 +212,17 @@ footer {
           transform: skew(-5deg);
 }
 
-.color_secound {
+.colorFirst:hover .firstPhoto {
+  background-color: #fff;
+}
+
+.colorSecound {
   width: 29%;
   height: 100%;
   top: 0;
-  left: 34.5%;
+  left: 34.8%;
   position: absolute;
-  z-index: 99;
+  z-index: 19;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   background: black;
@@ -214,13 +231,13 @@ footer {
           transform: skew(-5deg);
 }
 
-.color_third {
-  width: 29%;
+.colorThird {
+  width: 30.5%;
   height: 100%;
   top: 0;
-  left: 65%;
+  left: 65.5%;
   position: absolute;
-  z-index: 99;
+  z-index: 20;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   background: black;

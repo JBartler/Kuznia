@@ -14,11 +14,9 @@
     display: flex
     justify-content: center
     flex-direction: column
-    margin: 5vh auto
-    height: 90vh
-    // width: 90vw jak cośto poprawić
-    // max-width: 100vw tutaj okreslic maxy w px, ogolnie dokladna wartosc
-    // max-height: 98vh
+    margin: auto
+    height: 96vh
+    max-width: 3600px
 
 header
     align-items: center
@@ -48,23 +46,27 @@ section
 .img_container
     clip-path: polygon(5% 0, 110% 0%, 100% 100%, -5% 100%)
     position: relative
+    top: -13px
     right: 15px
     width: 100%
-    height: 100%
-    // position: absolute
-    // z-index: 2
-    // display: flex
-    // justify-content: center
-    // overflow: hidden
-    // border: 60px solid rgba(0,0 ,0 ,0 )
+    height: 102%
 
     .photo
         width: 100%
-        height: 99%
+        height: 100%
         left: 10px
+        z-index: 10
         position: relative
         transform: scale(1.2)
         filter: grayscale(100%)
+
+.secoundPhoto
+    position: absolute
+    top: 100px
+
+.thirdPhoto
+    position: absolute
+    top: 100px
 
 .background_blur
     position: absolute
@@ -77,9 +79,6 @@ section
     border: 60px solid rgba(0,0 ,0 ,0 )
 
 .blur_img
-    // width: 100%
-    // position: relative
-    // overflow: hidden
     transform: scale(4)
     filter: blur(2px)
 
@@ -103,7 +102,7 @@ footer
     top: 0
     left: 0
     position: absolute
-    z-index: 3
+    z-index: 15
     opacity: 0.4
     transform: scale(1.5)
 
@@ -113,7 +112,7 @@ footer
     top: 0
     left: 0
     position: absolute
-    z-index: 3
+    z-index: 15
     transform: scale(1.5)
 
 .cos3
@@ -123,53 +122,47 @@ footer
     top: 0
     left: 0
     position: absolute
-    z-index: 3
+    z-index: 15
     opacity: 0.4
     transform: scale(1.5)
 
 .color
     display: flex
-    // width: 29%
-    // height: 100%
-    // top: 0
-    // position: absolute
-    // z-index: 99
-    // transform: scale(1.1)
-    // background: rgb(0,0,0)
-    // background: linear-gradient(75deg, rgba(0,0,0,1) 0%, rgba(61,61,61,0) 60%, rgba(0,0,0,1) 100%)
-    // transform: skew(-5deg)
 
-.color_first
+.colorFirst
     width: 29%
     height: 100%
     top: 0
     left: 4%
     position: absolute
-    z-index: 99
+    z-index: 999
     transform: scale(1.1)
     background: rgb(0,0,0)
     background: linear-gradient(75deg, rgba(0,0,0,1) 0%, rgba(61,61,61,0) 60%, rgba(0,0,0,1) 100%)
     transform: skew(-5deg)
 
-.color_secound
+.colorFirst:hover .firstPhoto
+    background-color: #fff
+
+.colorSecound
     width: 29%
     height: 100%
     top: 0
-    left: 34.5%
+    left: 34.8%
     position: absolute
-    z-index: 99
+    z-index: 19
     transform: scale(1.1)
     background: rgb(0,0,0)
     background: rgba(0,0 ,255 ,0.3 )
     transform: skew(-5deg)
 
-.color_third
-    width: 29%
+.colorThird
+    width: 30.5%
     height: 100%
     top: 0
-    left: 65%
+    left: 65.5%
     position: absolute
-    z-index: 99
+    z-index: 20
     transform: scale(1.1)
     background: rgb(0,0,0)
     background: linear-gradient(75deg, rgba(0,0,0,1) 0%, rgba(61,61,61,0) 60%, rgba(0,0,0,1) 100%)
