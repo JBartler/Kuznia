@@ -178,6 +178,12 @@ footer {
           transform: scale(1.5);
 }
 
+.color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .color_first {
   width: 29%;
   height: 100%;
